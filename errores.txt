@@ -1,0 +1,518 @@
+empezasdfo12345empezoviene normalinstancio DBhizo sql:select idflujo,paso FROM USUARIO_FLUJOS where idusuario like '1453743074678369' ORDER BY hora DESC LIMIT 1y si consultotoca normalitoa procesara consultar:select paso FROM USUARIO_FLUJOS WHERE idusuario like '1453743074678369' AND idflujo='FLUJONORMAL'ya consultòcargo pasosinsert into MENSAJES_USUARIOS(idusuario,idflujo,idpaso,mensaje,hora) VALUES('1453743074678369','FLUJONORMAL','bienvenida','Hola',now())ejecuto:insert into MENSAJES_USUARIOS(idusuario,idflujo,idpaso,mensaje,hora) VALUES('1453743074678369','FLUJONORMAL','bienvenida','Hola',now())a crear registroejecuto:insert into REGISTRO(idusuario,hora) VALUES('1453743074678369',now())mensaje a enviar{
+        "recipient":{
+          "id":"1453743074678369"
+          },
+        "message":{
+          "attachment":{
+            "type":"template",
+            "payload":{
+              "template_type":"button",
+              "text":"Bienvenido al sistema de alertas.  ¿Desea reportar un incidente?",
+              "buttons":[
+                {
+                  "type":"postback",
+                  "title":"Fuga de agua",
+                  "payload":"FLFUGAAGUA"
+                  },
+                  {
+                    "type":"postback",
+                    "title":"Falta de servicio",
+                    "payload":"falta_servicio"
+                    }
+                ]
+              }
+            }
+          }
+      }va a registrar pasoinstancioejecuto:insert INTO USUARIO_FLUJOS(idusuario,idflujo,paso) VALUES('1453743074678369','FLUJONORMAL','bienvenida')respuesta:{"recipient_id":"1453743074678369","message_id":"mid.$cAAXG6uSw6h5h7vQ7GVbva7yLeKtd"}estructura mensaje a grabarArray
+(
+    [mid] => mid.$cAAXG6uSw6h5h7vQ06Vbva50Ja0gU
+    [seq] => 178536
+    [text] => Hola
+)
+empezasdfo12345empezoempezasdfo12345empezoempezasdfo12345empezoempezasdfo12345empezoempezasdfo12345empezoempezasdfo12345empezoempezasdfo12345empezopostbackFLFUGAAGUAobtuvo flujoininicioa consultar:select paso FROM USUARIO_FLUJOS WHERE idusuario like '1453743074678369' AND idflujo='FLFUGAAGUA'ya consultòsisiguieno pasoobtuvo mensajemensaje a enviar{
+        "recipient":{
+          "id":"1453743074678369"
+          },
+        "message":{
+          "text":"Necesitamos información del lugar para saber donde está sucediendo, haz click para compartir ubicación o describe como llegar al lugar",
+          "quick_replies":[
+            {
+              "content_type":"location"
+              }
+            ]
+          }
+        }va a registrar pasoinstancioejecuto:insert INTO USUARIO_FLUJOS(idusuario,idflujo,paso) VALUES('1453743074678369','FLFUGAAGUA','instrucciones')respuesta:{"recipient_id":"1453743074678369","message_id":"mid.$cAAXG6uSw6h5h7vRTAVbva8Kk0065"}envioempezasdfo12345empezoempezasdfo12345empezoempezasdfo12345empezoempezasdfo12345empezoempezasdfo12345empezoempezasdfo12345empezoviene normalinstancio DBhizo sql:select idflujo,paso FROM USUARIO_FLUJOS where idusuario like '1453743074678369' ORDER BY hora DESC LIMIT 1y si consultoreinicia:FLFUGAAGUAa consultar:select paso FROM USUARIO_FLUJOS WHERE idusuario like '1453743074678369' AND idflujo='FLFUGAAGUA'ya consultòinsert into MENSAJES_USUARIOS(idusuario,idflujo,idpaso,mensaje,hora) VALUES('1453743074678369','FLFUGAAGUA','instrucciones','Mi casa',now())ejecuto:insert into MENSAJES_USUARIOS(idusuario,idflujo,idpaso,mensaje,hora) VALUES('1453743074678369','FLFUGAAGUA','instrucciones','Mi casa',now())ininicioa consultar:select paso FROM USUARIO_FLUJOS WHERE idusuario like '1453743074678369' AND idflujo='FLFUGAAGUA'ya consultòsisiguiesi paso:instruccionesno pasomensaje a enviar{
+                  "recipient":{
+                      "id":"1453743074678369"
+                  },
+                  "message":{
+                      "text":"Por favor envía una fotografía del lugar o la señal de fuga"
+                  }
+              }va a registrar pasoinstancioejecuto:insert INTO USUARIO_FLUJOS(idusuario,idflujo,paso) VALUES('1453743074678369','FLFUGAAGUA','fotografia')respuesta:{"recipient_id":"1453743074678369","message_id":"mid.$cAAXG6uSw6h5h7vWKdVbvbBB8NYXF"}array de pasosArray
+(
+    [0] => instrucciones
+)
+estructura mensaje a grabarArray
+(
+    [mid] => mid.$cAAXG6uSw6h5h7vWEgFbva_CpO2DK
+    [seq] => 178544
+    [text] => Mi casa
+)
+empezasdfo12345empezoempezasdfo12345empezoempezasdfo12345empezoempezasdfo12345empezoempezasdfo12345empezoviene normalinstancio DBhizo sql:select idflujo,paso FROM USUARIO_FLUJOS where idusuario like '1453743074678369' ORDER BY hora DESC LIMIT 1y si consultoreinicia:FLFUGAAGUAa consultar:select paso FROM USUARIO_FLUJOS WHERE idusuario like '1453743074678369' AND idflujo='FLFUGAAGUA'ya consultòejecuto:insert into ADJUNTOS(idusuario,idflujo,url,hora) VALUES('1453743074678369','FLFUGAAGUA','https://scontent.xx.fbcdn.net/v/t34.0-12/18217056_10155234825646797_1328269410_n.jpg?_nc_ad=z-m&oh=882dbb63b105296db23438688a585957&oe=59084CD5',now())errores:Field 'tipo' doesn't have a default valueinsert into MENSAJES_USUARIOS(idusuario,idflujo,idpaso,mensaje,hora) VALUES('1453743074678369','FLFUGAAGUA','instrucciones','(attach)',now())ejecuto:insert into MENSAJES_USUARIOS(idusuario,idflujo,idpaso,mensaje,hora) VALUES('1453743074678369','FLFUGAAGUA','instrucciones','(attach)',now())ininicioa consultar:select paso FROM USUARIO_FLUJOS WHERE idusuario like '1453743074678369' AND idflujo='FLFUGAAGUA'ya consultòsisiguiesi paso:instruccionessi paso:fotografiano pasomensaje a enviar{
+                  "recipient":{
+                      "id":"1453743074678369"
+                  },
+                  "message":{
+                      "text":"Gracias por la información, las autoridades revisarán el caso tan pronto sea posible"
+                  }
+              }va a registrar pasoinstancioejecuto:insert INTO USUARIO_FLUJOS(idusuario,idflujo,paso) VALUES('1453743074678369','FLFUGAAGUA','final')respuesta:{"recipient_id":"1453743074678369","message_id":"mid.$cAAXG6uSw6h5h7vX5Z1bvbCw-1vT2"}array de pasosArray
+(
+    [0] => fotografia
+    [1] => instrucciones
+)
+estructura mensaje a grabarArray
+(
+    [mid] => mid.$cAAXG6uSw6h5h7vX1zVbvbAuLnnQA
+    [seq] => 178548
+    [attachments] => Array
+        (
+            [0] => Array
+                (
+                    [type] => image
+                    [payload] => Array
+                        (
+                            [url] => https://scontent.xx.fbcdn.net/v/t34.0-12/18217056_10155234825646797_1328269410_n.jpg?_nc_ad=z-m&oh=882dbb63b105296db23438688a585957&oe=59084CD5
+                        )
+
+                )
+
+        )
+
+)
+empezasdfo12345empezoempezasdfo12345empezoempezasdfo12345empezoempezasdfo12345empezoempezasdfo12345empezoviene normalinstancio DBhizo sql:select idflujo,paso FROM USUARIO_FLUJOS where idusuario like '1453743074678369' ORDER BY hora DESC LIMIT 1y si consultotoca normalitoa procesara consultar:select paso FROM USUARIO_FLUJOS WHERE idusuario like '1453743074678369' AND idflujo='FLUJONORMAL'ya consultòcargo pasosinsert into MENSAJES_USUARIOS(idusuario,idflujo,idpaso,mensaje,hora) VALUES('1453743074678369','FLUJONORMAL','bienvenida','H',now())ejecuto:insert into MENSAJES_USUARIOS(idusuario,idflujo,idpaso,mensaje,hora) VALUES('1453743074678369','FLUJONORMAL','bienvenida','H',now())a crear registroejecuto:insert into REGISTRO(idusuario,hora) VALUES('1453743074678369',now())mensaje a enviar{
+        "recipient":{
+          "id":"1453743074678369"
+          },
+        "message":{
+          "attachment":{
+            "type":"template",
+            "payload":{
+              "template_type":"button",
+              "text":"Bienvenido al sistema de alertas.  ¿Desea reportar un incidente?",
+              "buttons":[
+                {
+                  "type":"postback",
+                  "title":"Fuga de agua",
+                  "payload":"FLFUGAAGUA"
+                  },
+                  {
+                    "type":"postback",
+                    "title":"Falta de servicio",
+                    "payload":"falta_servicio"
+                    }
+                ]
+              }
+            }
+          }
+      }va a registrar pasoinstancioejecuto:insert INTO USUARIO_FLUJOS(idusuario,idflujo,paso) VALUES('1453743074678369','FLUJONORMAL','bienvenida')respuesta:{"recipient_id":"1453743074678369","message_id":"mid.$cAAXG6uSw6h5h7vynNFbvbdeewj1y"}estructura mensaje a grabarArray
+(
+    [mid] => mid.$cAAXG6uSw6h5h7vyiylbvbbhp9pdR
+    [seq] => 178552
+    [text] => H
+)
+empezasdfo12345empezoempezasdfo12345empezoempezasdfo12345empezoempezasdfo12345empezoempezasdfo12345empezoempezasdfo12345empezopostbackFLFUGAAGUAobtuvo flujoininicioa consultar:select paso FROM USUARIO_FLUJOS WHERE idusuario like '1453743074678369' AND idflujo='FLFUGAAGUA'ya consultòsisiguieno pasoobtuvo mensajemensaje a enviar{
+        "recipient":{
+          "id":"1453743074678369"
+          },
+        "message":{
+          "text":"Necesitamos información del lugar para saber donde está sucediendo, haz click para compartir ubicación o describe como llegar al lugar",
+          "quick_replies":[
+            {
+              "content_type":"location"
+              }
+            ]
+          }
+        }va a registrar pasoinstancioejecuto:insert INTO USUARIO_FLUJOS(idusuario,idflujo,paso) VALUES('1453743074678369','FLFUGAAGUA','instrucciones')respuesta:{"recipient_id":"1453743074678369","message_id":"mid.$cAAXG6uSw6h5h7vy1h1bvbdtgJvo0"}envioempezasdfo12345empezoempezasdfo12345empezoempezasdfo12345empezoempezasdfo12345empezoempezasdfo12345empezoempezasdfo12345empezoviene normalinstancio DBhizo sql:select idflujo,paso FROM USUARIO_FLUJOS where idusuario like '1453743074678369' ORDER BY hora DESC LIMIT 1y si consultoreinicia:FLFUGAAGUAa consultar:select paso FROM USUARIO_FLUJOS WHERE idusuario like '1453743074678369' AND idflujo='FLFUGAAGUA'ya consultòejecuto:insert into ADJUNTOS(idusuario,idflujo,url,hora,tipo) VALUES('1453743074678369','FLFUGAAGUA','14.582048,-90.547967',now(),'coord')insert into MENSAJES_USUARIOS(idusuario,idflujo,idpaso,mensaje,hora) VALUES('1453743074678369','FLFUGAAGUA','instrucciones','(attach)',now())ejecuto:insert into MENSAJES_USUARIOS(idusuario,idflujo,idpaso,mensaje,hora) VALUES('1453743074678369','FLFUGAAGUA','instrucciones','(attach)',now())ininicioa consultar:select paso FROM USUARIO_FLUJOS WHERE idusuario like '1453743074678369' AND idflujo='FLFUGAAGUA'ya consultòsisiguiesi paso:instruccionesno pasomensaje a enviar{
+                  "recipient":{
+                      "id":"1453743074678369"
+                  },
+                  "message":{
+                      "text":"Por favor envía una fotografía del lugar o la señal de fuga"
+                  }
+              }va a registrar pasoinstancioejecuto:insert INTO USUARIO_FLUJOS(idusuario,idflujo,paso) VALUES('1453743074678369','FLFUGAAGUA','fotografia')respuesta:{"recipient_id":"1453743074678369","message_id":"mid.$cAAXG6uSw6h5h7vzXHVbvbePFwnZf"}array de pasosArray
+(
+    [0] => instrucciones
+)
+estructura mensaje a grabarArray
+(
+    [mid] => mid.$cAAXG6uSw6h5h7vzUNVbvbcSTgYIt
+    [seq] => 178560
+    [attachments] => Array
+        (
+            [0] => Array
+                (
+                    [title] => Ricardo's Location
+                    [url] => https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.bing.com%2Fmaps%2Fdefault.aspx%3Fv%3D2%26pc%3DFACEBK%26mid%3D8100%26where1%3D14.582048%252C%2B-90.547967%26FORM%3DFBKPL1%26mkt%3Den-US&h=ATPGnboK1-7UrM26TOPYK0m0VbsOkgHz6KUJ8WtlyfxbzTgh5JS4pk_K2N1Wr-_xrllTfxe9Os4f-4HvZL3raVEXDQ0Gnae9ejqr-EvTEyvk&s=1&enc=AZPb43txbUHj7FRd39syDlO-cldQ1q1ExXMPhipSk8s7BilEDAXxGyiMnCJ3u8E5GL3rz_qEXd_UrdlFEkH9eAuo
+                    [type] => location
+                    [payload] => Array
+                        (
+                            [coordinates] => Array
+                                (
+                                    [lat] => 14.582048
+                                    [long] => -90.547967
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+empezasdfo12345empezoempezasdfo12345empezoempezasdfo12345empezoempezasdfo12345empezoempezasdfo12345empezoempezasdfo12345empezoviene normalinstancio DBhizo sql:select idflujo,paso FROM USUARIO_FLUJOS where idusuario like '1453743074678369' ORDER BY hora DESC LIMIT 1y si consultoreinicia:FLFUGAAGUAa consultar:select paso FROM USUARIO_FLUJOS WHERE idusuario like '1453743074678369' AND idflujo='FLFUGAAGUA'ya consultòejecuto:insert into ADJUNTOS(idusuario,idflujo,url,hora,tipo) VALUES('1453743074678369','FLFUGAAGUA','https://scontent.xx.fbcdn.net/v/t35.0-12/18209651_10155234837456797_1508744674_o.jpg?_nc_ad=z-m&oh=07df9331d42a41eb9243eaef44db4fe5&oe=59072D0C',now(),'img')insert into MENSAJES_USUARIOS(idusuario,idflujo,idpaso,mensaje,hora) VALUES('1453743074678369','FLFUGAAGUA','instrucciones','(attach)',now())ejecuto:insert into MENSAJES_USUARIOS(idusuario,idflujo,idpaso,mensaje,hora) VALUES('1453743074678369','FLFUGAAGUA','instrucciones','(attach)',now())ininicioa consultar:select paso FROM USUARIO_FLUJOS WHERE idusuario like '1453743074678369' AND idflujo='FLFUGAAGUA'ya consultòsisiguiesi paso:instruccionessi paso:fotografiano pasomensaje a enviar{
+                  "recipient":{
+                      "id":"1453743074678369"
+                  },
+                  "message":{
+                      "text":"Gracias por la información, las autoridades revisarán el caso tan pronto sea posible"
+                  }
+              }va a registrar pasoinstancioejecuto:insert INTO USUARIO_FLUJOS(idusuario,idflujo,paso) VALUES('1453743074678369','FLFUGAAGUA','final')respuesta:{"recipient_id":"1453743074678369","message_id":"mid.$cAAXG6uSw6h5h7vz5jFbvbexhJlc7"}array de pasosArray
+(
+    [0] => fotografia
+    [1] => instrucciones
+)
+estructura mensaje a grabarArray
+(
+    [mid] => mid.$cAAXG6uSw6h5h7vz3B1bvbcwgdIjE
+    [seq] => 178564
+    [attachments] => Array
+        (
+            [0] => Array
+                (
+                    [type] => image
+                    [payload] => Array
+                        (
+                            [url] => https://scontent.xx.fbcdn.net/v/t35.0-12/18209651_10155234837456797_1508744674_o.jpg?_nc_ad=z-m&oh=07df9331d42a41eb9243eaef44db4fe5&oe=59072D0C
+                        )
+
+                )
+
+        )
+
+)
+empezasdfo12345empezoempezasdfo12345empezoempezasdfo12345empezoempezasdfo12345empezoempezasdfo12345empezoempezasdfo12345empezoviene normalinstancio DBhizo sql:select idflujo,paso FROM USUARIO_FLUJOS where idusuario like '1453743074678369' ORDER BY hora DESC LIMIT 1y si consultotoca normalitoa procesara consultar:select paso FROM USUARIO_FLUJOS WHERE idusuario like '1453743074678369' AND idflujo='FLUJONORMAL'ya consultòcargo pasosinsert into MENSAJES_USUARIOS(idusuario,idflujo,idpaso,mensaje,hora) VALUES('1453743074678369','FLUJONORMAL','bienvenida','Buen día',now())ejecuto:insert into MENSAJES_USUARIOS(idusuario,idflujo,idpaso,mensaje,hora) VALUES('1453743074678369','FLUJONORMAL','bienvenida','Buen día',now())a crear registroejecuto:insert into REGISTRO(idusuario,hora) VALUES('1453743074678369',now())mensaje a enviar{
+        "recipient":{
+          "id":"1453743074678369"
+          },
+        "message":{
+          "attachment":{
+            "type":"template",
+            "payload":{
+              "template_type":"button",
+              "text":"Bienvenido al sistema de alertas.  ¿Desea reportar un incidente?",
+              "buttons":[
+                {
+                  "type":"postback",
+                  "title":"Fuga de agua",
+                  "payload":"FLFUGAAGUA"
+                  },
+                  {
+                    "type":"postback",
+                    "title":"Falta de servicio",
+                    "payload":"falta_servicio"
+                    }
+                ]
+              }
+            }
+          }
+      }va a registrar pasoinstancioejecuto:insert INTO USUARIO_FLUJOS(idusuario,idflujo,paso) VALUES('1453743074678369','FLUJONORMAL','bienvenida')respuesta:{"recipient_id":"1453743074678369","message_id":"mid.$cAAXG6uSw6h5h7yLDcFbvd1521821"}estructura mensaje a grabarArray
+(
+    [mid] => mid.$cAAXG6uSw6h5h7yK7uVbvdz62mjEs
+    [seq] => 178570
+    [text] => Buen día
+)
+empezasdfo12345empezoempezasdfo12345empezoempezasdfo12345empezoempezasdfo12345empezoempezasdfo12345empezoempezasdfo12345empezoempezasdfo12345empezopostbackFLFUGAAGUAobtuvo flujoininicioa consultar:select paso FROM USUARIO_FLUJOS WHERE idusuario like '1453743074678369' AND idflujo='FLFUGAAGUA'ya consultòsisiguieno pasoobtuvo mensajemensaje a enviar{
+        "recipient":{
+          "id":"1453743074678369"
+          },
+        "message":{
+          "text":"Necesitamos información del lugar para saber donde está sucediendo, haz click para compartir ubicación o describe como llegar al lugar",
+          "quick_replies":[
+            {
+              "content_type":"location"
+              }
+            ]
+          }
+        }va a registrar pasoinstancioejecuto:insert INTO USUARIO_FLUJOS(idusuario,idflujo,paso) VALUES('1453743074678369','FLFUGAAGUA','instrucciones')respuesta:{"recipient_id":"1453743074678369","message_id":"mid.$cAAXG6uSw6h5h7yLXHVbvd2OwbrzZ"}envioempezasdfo12345empezoempezasdfo12345empezoempezasdfo12345empezoempezasdfo12345empezoempezasdfo12345empezoviene normalinstancio DBhizo sql:select idflujo,paso FROM USUARIO_FLUJOS where idusuario like '1453743074678369' ORDER BY hora DESC LIMIT 1y si consultoreinicia:FLFUGAAGUAa consultar:select paso FROM USUARIO_FLUJOS WHERE idusuario like '1453743074678369' AND idflujo='FLFUGAAGUA'ya consultòejecuto:insert into ADJUNTOS(idusuario,idflujo,url,hora,tipo) VALUES('1453743074678369','FLFUGAAGUA','14.582048,-90.547967',now(),'coord')insert into MENSAJES_USUARIOS(idusuario,idflujo,idpaso,mensaje,hora) VALUES('1453743074678369','FLFUGAAGUA','instrucciones','(attach)',now())ejecuto:insert into MENSAJES_USUARIOS(idusuario,idflujo,idpaso,mensaje,hora) VALUES('1453743074678369','FLFUGAAGUA','instrucciones','(attach)',now())ininicioa consultar:select paso FROM USUARIO_FLUJOS WHERE idusuario like '1453743074678369' AND idflujo='FLFUGAAGUA'ya consultòsisiguiesi paso:instruccionesno pasomensaje a enviar{
+                  "recipient":{
+                      "id":"1453743074678369"
+                  },
+                  "message":{
+                      "text":"Por favor envía una fotografía del lugar o la señal de fuga"
+                  }
+              }va a registrar pasoinstancioejecuto:insert INTO USUARIO_FLUJOS(idusuario,idflujo,paso) VALUES('1453743074678369','FLFUGAAGUA','fotografia')respuesta:{"recipient_id":"1453743074678369","message_id":"mid.$cAAXG6uSw6h5h7yMCiVbvd26gr6wv"}array de pasosArray
+(
+    [0] => instrucciones
+)
+estructura mensaje a grabarArray
+(
+    [mid] => mid.$cAAXG6uSw6h5h7yL-4Fbvd08oos0C
+    [seq] => 178578
+    [attachments] => Array
+        (
+            [0] => Array
+                (
+                    [title] => Ricardo's Location
+                    [url] => https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.bing.com%2Fmaps%2Fdefault.aspx%3Fv%3D2%26pc%3DFACEBK%26mid%3D8100%26where1%3D14.582048%252C%2B-90.547967%26FORM%3DFBKPL1%26mkt%3Den-US&h=ATNLdK03L4nd01KNW-GH4wkCo9GcxQPoQfUZwS4pZyKMzMG0sUY3Cf9fiK53eJYQ2BhkmMOCxb36TXGLkaOvgfFk0NuEYugYFBCpw6zl_wMs&s=1&enc=AZMZFzfKJv3wonlerQromdg7GxJJY_jwF11tHkRRwmQuPMv2vc4OFs2pGz6gfnD-_eEIWrsMeJdNNOcaNBkm8kJJ
+                    [type] => location
+                    [payload] => Array
+                        (
+                            [coordinates] => Array
+                                (
+                                    [lat] => 14.582048
+                                    [long] => -90.547967
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+empezasdfo12345empezoempezasdfo12345empezoempezasdfo12345empezoempezasdfo12345empezoempezasdfo12345empezoempezasdfo12345empezoviene normalinstancio DBhizo sql:select idflujo,paso FROM USUARIO_FLUJOS where idusuario like '1453743074678369' ORDER BY hora DESC LIMIT 1y si consultoreinicia:FLFUGAAGUAa consultar:select paso FROM USUARIO_FLUJOS WHERE idusuario like '1453743074678369' AND idflujo='FLFUGAAGUA'ya consultòejecuto:insert into ADJUNTOS(idusuario,idflujo,url,hora,tipo) VALUES('1453743074678369','FLFUGAAGUA','https://scontent.xx.fbcdn.net/v/t34.0-12/18217414_10155234896701797_193792700_n.jpg?_nc_ad=z-m&oh=1ed169f3b31eada26a70a5cf99792a5c&oe=59085655',now(),'img')insert into MENSAJES_USUARIOS(idusuario,idflujo,idpaso,mensaje,hora) VALUES('1453743074678369','FLFUGAAGUA','instrucciones','(attach)',now())ejecuto:insert into MENSAJES_USUARIOS(idusuario,idflujo,idpaso,mensaje,hora) VALUES('1453743074678369','FLFUGAAGUA','instrucciones','(attach)',now())ininicioa consultar:select paso FROM USUARIO_FLUJOS WHERE idusuario like '1453743074678369' AND idflujo='FLFUGAAGUA'ya consultòsisiguiesi paso:instruccionessi paso:fotografiano pasomensaje a enviar{
+                  "recipient":{
+                      "id":"1453743074678369"
+                  },
+                  "message":{
+                      "text":"Gracias por la información, las autoridades revisarán el caso tan pronto sea posible"
+                  }
+              }va a registrar pasoinstancioejecuto:insert INTO USUARIO_FLUJOS(idusuario,idflujo,paso) VALUES('1453743074678369','FLFUGAAGUA','final')respuesta:{"recipient_id":"1453743074678369","message_id":"mid.$cAAXG6uSw6h5h7yM4YFbvd3wVxByj"}array de pasosArray
+(
+    [0] => fotografia
+    [1] => instrucciones
+)
+estructura mensaje a grabarArray
+(
+    [mid] => mid.$cAAXG6uSw6h5h7yM1x1bvd1uHl69V
+    [seq] => 178582
+    [attachments] => Array
+        (
+            [0] => Array
+                (
+                    [type] => image
+                    [payload] => Array
+                        (
+                            [url] => https://scontent.xx.fbcdn.net/v/t34.0-12/18217414_10155234896701797_193792700_n.jpg?_nc_ad=z-m&oh=1ed169f3b31eada26a70a5cf99792a5c&oe=59085655
+                        )
+
+                )
+
+        )
+
+)
+empezasdfo12345empezoempezasdfo12345empezoempezasdfo12345empezoempezasdfo12345empezoempezasdfo12345empezoempezasdfo12345empezoviene normalinstancio DBhizo sql:select idflujo,paso FROM USUARIO_FLUJOS where idusuario like '1453743074678369' ORDER BY hora DESC LIMIT 1y si consultotoca normalitoa procesara consultar:select paso FROM USUARIO_FLUJOS WHERE idusuario like '1453743074678369' AND idflujo='FLUJONORMAL'ya consultòcargo pasosinsert into MENSAJES_USUARIOS(idusuario,idflujo,idpaso,mensaje,hora) VALUES('1453743074678369','FLUJONORMAL','bienvenida','Buen día',now())ejecuto:insert into MENSAJES_USUARIOS(idusuario,idflujo,idpaso,mensaje,hora) VALUES('1453743074678369','FLUJONORMAL','bienvenida','Buen día',now())a crear registroejecuto:insert into REGISTRO(idusuario,hora) VALUES('1453743074678369',now())mensaje a enviar{
+        "recipient":{
+          "id":"1453743074678369"
+          },
+        "message":{
+          "attachment":{
+            "type":"template",
+            "payload":{
+              "template_type":"button",
+              "text":"Bienvenido al sistema de alertas.  ¿Desea reportar un incidente?",
+              "buttons":[
+                {
+                  "type":"postback",
+                  "title":"Fuga de agua",
+                  "payload":"FLFUGAAGUA"
+                  },
+                  {
+                    "type":"postback",
+                    "title":"Falta de servicio",
+                    "payload":"falta_servicio"
+                    }
+                ]
+              }
+            }
+          }
+      }va a registrar pasoinstancioejecuto:insert INTO USUARIO_FLUJOS(idusuario,idflujo,paso) VALUES('1453743074678369','FLUJONORMAL','bienvenida')respuesta:{"recipient_id":"1453743074678369","message_id":"mid.$cAAXG6uSw6h5h71rUW1bvhWLqoyGl"}estructura mensaje a grabarArray
+(
+    [mid] => mid.$cAAXG6uSw6h5h71rNUVbvhUMuROBf
+    [seq] => 178587
+    [text] => Buen día
+)
+empezasdfo12345empezoempezasdfo12345empezoempezasdfo12345empezoempezasdfo12345empezoempezasdfo12345empezoempezasdfo12345empezopostbackFLFUGAAGUAobtuvo flujoininicioa consultar:select paso FROM USUARIO_FLUJOS WHERE idusuario like '1453743074678369' AND idflujo='FLFUGAAGUA'ya consultòsisiguieno pasoobtuvo mensajemensaje a enviar{
+        "recipient":{
+          "id":"1453743074678369"
+          },
+        "message":{
+          "text":"Necesitamos información del lugar para saber donde está sucediendo, haz click para compartir ubicación o describe como llegar al lugar",
+          "quick_replies":[
+            {
+              "content_type":"location"
+              }
+            ]
+          }
+        }va a registrar pasoinstancioejecuto:insert INTO USUARIO_FLUJOS(idusuario,idflujo,paso) VALUES('1453743074678369','FLFUGAAGUA','instrucciones')respuesta:{"recipient_id":"1453743074678369","message_id":"mid.$cAAXG6uSw6h5h71r4LVbvhWwJkhf6"}envioempezasdfo12345empezoempezasdfo12345empezoempezasdfo12345empezoempezasdfo12345empezoviene normalinstancio DBhizo sql:select idflujo,paso FROM USUARIO_FLUJOS where idusuario like '1453743074678369' ORDER BY hora DESC LIMIT 1y si consultoreinicia:FLFUGAAGUAa consultar:select paso FROM USUARIO_FLUJOS WHERE idusuario like '1453743074678369' AND idflujo='FLFUGAAGUA'ya consultòejecuto:insert into ADJUNTOS(idusuario,idflujo,url,hora,tipo) VALUES('1453743074678369','FLFUGAAGUA','14.582063,-90.547948',now(),'coord')insert into MENSAJES_USUARIOS(idusuario,idflujo,idpaso,mensaje,hora) VALUES('1453743074678369','FLFUGAAGUA','instrucciones','(attach)',now())ejecuto:insert into MENSAJES_USUARIOS(idusuario,idflujo,idpaso,mensaje,hora) VALUES('1453743074678369','FLFUGAAGUA','instrucciones','(attach)',now())ininicioa consultar:select paso FROM USUARIO_FLUJOS WHERE idusuario like '1453743074678369' AND idflujo='FLFUGAAGUA'ya consultòsisiguiesi paso:instruccionesno pasomensaje a enviar{
+                  "recipient":{
+                      "id":"1453743074678369"
+                  },
+                  "message":{
+                      "text":"Por favor envía una fotografía del lugar o la señal de fuga"
+                  }
+              }va a registrar pasoinstancioejecuto:insert INTO USUARIO_FLUJOS(idusuario,idflujo,paso) VALUES('1453743074678369','FLFUGAAGUA','fotografia')respuesta:{"recipient_id":"1453743074678369","message_id":"mid.$cAAXG6uSw6h5h71suCVbvhXmAkG09"}array de pasosArray
+(
+    [0] => instrucciones
+)
+estructura mensaje a grabarArray
+(
+    [mid] => mid.$cAAXG6uSw6h5h71sq0FbvhVpZrcPv
+    [seq] => 178594
+    [attachments] => Array
+        (
+            [0] => Array
+                (
+                    [title] => Ricardo's Location
+                    [url] => https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.bing.com%2Fmaps%2Fdefault.aspx%3Fv%3D2%26pc%3DFACEBK%26mid%3D8100%26where1%3D14.582063%252C%2B-90.547948%26FORM%3DFBKPL1%26mkt%3Den-US&h=ATPejv0pmI2JJVHpisLxvSONXxkw933X0bfiORqCE9GCQRfXxrXGgxzUOqh6btpoWizi0ByjZlN6yqnkjQhY7lrcz7NTdI_Q7LNdEDLiMsXw&s=1&enc=AZO5Ona_TDKC_YvJs8ESYHCEpzKRVcRoxLd2sZlGhsohazEChOXcbbWWdCF6spu7Mb-pXCxt3plXb7HLy-3b5d54
+                    [type] => location
+                    [payload] => Array
+                        (
+                            [coordinates] => Array
+                                (
+                                    [lat] => 14.582063
+                                    [long] => -90.547948
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+empezasdfo12345empezoempezasdfo12345empezoempezasdfo12345empezoempezasdfo1empezasdfo12324354empezo5empezoempezasdfo12345empezoviene normalinstancio DBhizo sql:select idflujo,paso FROM USUARIO_FLUJOS where idusuario like '1453743074678369' ORDER BY hora DESC LIMIT 1y si consultoreinicia:FLFUGAAGUAa consultar:select paso FROM USUARIO_FLUJOS WHERE idusuario like '1453743074678369' AND idflujo='FLFUGAAGUA'ya consultòejecuto:insert into ADJUNTOS(idusuario,idflujo,url,hora,tipo) VALUES('1453743074678369','FLFUGAAGUA','https://scontent.xx.fbcdn.net/v/t35.0-12/18209613_10155234996421797_808083703_o.jpg?_nc_ad=z-m&oh=4f4ae5ee7923f96cb4baf179561fcdb8&oe=59074CD0',now(),'img')insert into MENSAJES_USUARIOS(idusuario,idflujo,idpaso,mensaje,hora) VALUES('1453743074678369','FLFUGAAGUA','instrucciones','(attach)',now())ejecuto:insert into MENSAJES_USUARIOS(idusuario,idflujo,idpaso,mensaje,hora) VALUES('1453743074678369','FLFUGAAGUA','instrucciones','(attach)',now())ininicioa consultar:select paso FROM USUARIO_FLUJOS WHERE idusuario like '1453743074678369' AND idflujo='FLFUGAAGUA'ya consultòsisiguiesi paso:instruccionessi paso:fotografiano pasomensaje a enviar{
+                  "recipient":{
+                      "id":"1453743074678369"
+                  },
+                  "message":{
+                      "text":"Gracias por la información, las autoridades revisarán el caso tan pronto sea posible"
+                  }
+              }va a registrar pasoinstancioejecuto:insert INTO USUARIO_FLUJOS(idusuario,idflujo,paso) VALUES('1453743074678369','FLFUGAAGUA','final')respuesta:{"recipient_id":"1453743074678369","message_id":"mid.$cAAXG6uSw6h5h71terVbvhYWp-NxD"}array de pasosArray
+(
+    [0] => fotografia
+    [1] => instrucciones
+)
+estructura mensaje a grabarArray
+(
+    [mid] => mid.$cAAXG6uSw6h5h71ta91bvhWRRESk1
+    [seq] => 178599
+    [attachments] => Array
+        (
+            [0] => Array
+                (
+                    [type] => image
+                    [payload] => Array
+                        (
+                            [url] => https://scontent.xx.fbcdn.net/v/t35.0-12/18209613_10155234996421797_808083703_o.jpg?_nc_ad=z-m&oh=4f4ae5ee7923f96cb4baf179561fcdb8&oe=59074CD0
+                        )
+
+                )
+
+        )
+
+)
+empezasdfo12345empezoempezasdfo12345empezoempezasdfo12345empezoempezasdfo12345empezoempezasdfo12345empezoviene normalinstancio DBhizo sql:select idflujo,paso FROM USUARIO_FLUJOS where idusuario like '1353119151437829' ORDER BY hora DESC LIMIT 1y si consultotoca normalitoa procesara consultar:select paso FROM USUARIO_FLUJOS WHERE idusuario like '1353119151437829' AND idflujo='FLUJONORMAL'ya consultòcargo pasosinsert into MENSAJES_USUARIOS(idusuario,idflujo,idpaso,mensaje,hora) VALUES('1353119151437829','FLUJONORMAL','bienvenida','Hola',now())ejecuto:insert into MENSAJES_USUARIOS(idusuario,idflujo,idpaso,mensaje,hora) VALUES('1353119151437829','FLUJONORMAL','bienvenida','Hola',now())a crear registroejecuto:insert into REGISTRO(idusuario,hora) VALUES('1353119151437829',now())mensaje a enviar{
+        "recipient":{
+          "id":"1353119151437829"
+          },
+        "message":{
+          "attachment":{
+            "type":"template",
+            "payload":{
+              "template_type":"button",
+              "text":"Bienvenido al sistema de alertas.  ¿Desea reportar un incidente?",
+              "buttons":[
+                {
+                  "type":"postback",
+                  "title":"Fuga de agua",
+                  "payload":"FLFUGAAGUA"
+                  },
+                  {
+                    "type":"postback",
+                    "title":"Falta de servicio",
+                    "payload":"falta_servicio"
+                    }
+                ]
+              }
+            }
+          }
+      }va a registrar pasoinstancioejecuto:insert INTO USUARIO_FLUJOS(idusuario,idflujo,paso) VALUES('1353119151437829','FLUJONORMAL','bienvenida')respuesta:{"error":{"message":"(#10) Cannot message users who are not admins, developers or testers of the app until pages_messaging permission is reviewed and the app is live.","type":"OAuthException","code":10,"error_subcode":2018028,"fbtrace_id":"Cv0YU\/K3XCe"}}estructura mensaje a grabarArray
+(
+    [mid] => mid.$cAAXG6pEVyf1h796fN1bvplZ_Ju4f
+    [seq] => 453467
+    [text] => Hola
+)
+empezasdfo12345empezoviene normalinstancio DBhizo sql:select idflujo,paso FROM USUARIO_FLUJOS where idusuario like '1353119151437829' ORDER BY hora DESC LIMIT 1y si consultoreinicia:FLUJONORMALa procesara consultar:select paso FROM USUARIO_FLUJOS WHERE idusuario like '1353119151437829' AND idflujo='FLUJONORMAL'ya consultòcargo pasosinsert into MENSAJES_USUARIOS(idusuario,idflujo,idpaso,mensaje,hora) VALUES('1353119151437829','FLUJONORMAL','b','Quiero reportar un incidente',now())ejecuto:insert into MENSAJES_USUARIOS(idusuario,idflujo,idpaso,mensaje,hora) VALUES('1353119151437829','FLUJONORMAL','b','Quiero reportar un incidente',now())encontro conversaciona consultar:select paso FROM USUARIO_FLUJOS WHERE idusuario like '' AND idflujo='FLUJONORMAL'ya consultòpasos:0<br />
+<b>Warning</b>:  Illegal string offset 'paso' in <b>/home/encargado1/public_html/bots/flujomensajes.php</b> on line <b>81</b><br />
+estructura mensaje a grabarArray
+(
+    [mid] => mid.$cAAXG6pEVyf1h79689Vbvpl3vLs5w
+    [seq] => 453469
+    [text] => Quiero reportar un incidente
+)
+empezasdfo12345empezoviene normalinstancio DBhizo sql:select idflujo,paso FROM USUARIO_FLUJOS where idusuario like '1353119151437829' ORDER BY hora DESC LIMIT 1y si consultoreinicia:FLUJONORMALa procesara consultar:select paso FROM USUARIO_FLUJOS WHERE idusuario like '1353119151437829' AND idflujo='FLUJONORMAL'ya consultòcargo pasosinsert into MENSAJES_USUARIOS(idusuario,idflujo,idpaso,mensaje,hora) VALUES('1353119151437829','FLUJONORMAL','b','Buen día',now())ejecuto:insert into MENSAJES_USUARIOS(idusuario,idflujo,idpaso,mensaje,hora) VALUES('1353119151437829','FLUJONORMAL','b','Buen día',now())encontro conversaciona consultar:select paso FROM USUARIO_FLUJOS WHERE idusuario like '' AND idflujo='FLUJONORMAL'ya consultòpasos:0<br />
+<b>Warning</b>:  Illegal string offset 'paso' in <b>/home/encargado1/public_html/bots/flujomensajes.php</b> on line <b>81</b><br />
+estructura mensaje a grabarArray
+(
+    [mid] => mid.$cAAXG6pEVyf1h798s_lbvpnntmvUQ
+    [seq] => 453471
+    [text] => Buen día
+)
+empezasdfo12345empezoviene normalinstancio DBhizo sql:select idflujo,paso FROM USUARIO_FLUJOS where idusuario like '1353119151437829' ORDER BY hora DESC LIMIT 1y si consultoreinicia:FLUJONORMALa procesara consultar:select paso FROM USUARIO_FLUJOS WHERE idusuario like '1353119151437829' AND idflujo='FLUJONORMAL'ya consultòcargo pasosinsert into MENSAJES_USUARIOS(idusuario,idflujo,idpaso,mensaje,hora) VALUES('1353119151437829','FLUJONORMAL','b','HOla',now())ejecuto:insert into MENSAJES_USUARIOS(idusuario,idflujo,idpaso,mensaje,hora) VALUES('1353119151437829','FLUJONORMAL','b','HOla',now())encontro conversaciona consultar:select paso FROM USUARIO_FLUJOS WHERE idusuario like '' AND idflujo='FLUJONORMAL'ya consultòpasos:0<br />
+<b>Warning</b>:  Illegal string offset 'paso' in <b>/home/encargado1/public_html/bots/flujomensajes.php</b> on line <b>81</b><br />
+estructura mensaje a grabarArray
+(
+    [mid] => mid.$cAAXG6pEVyf1h8VQlz1bwA7hYBoCO
+    [seq] => 453602
+    [text] => HOla
+)
+empezasdfo12345empezoviene normalinstancio DBhizo sql:select idflujo,paso FROM USUARIO_FLUJOS where idusuario like '1353119151437829' ORDER BY hora DESC LIMIT 1y si consultoreinicia:FLUJONORMALa procesara consultar:select paso FROM USUARIO_FLUJOS WHERE idusuario like '1353119151437829' AND idflujo='FLUJONORMAL'ya consultòcargo pasosinsert into MENSAJES_USUARIOS(idusuario,idflujo,idpaso,mensaje,hora) VALUES('1353119151437829','FLUJONORMAL','b','Buenos días',now())ejecuto:insert into MENSAJES_USUARIOS(idusuario,idflujo,idpaso,mensaje,hora) VALUES('1353119151437829','FLUJONORMAL','b','Buenos días',now())encontro conversaciona consultar:select paso FROM USUARIO_FLUJOS WHERE idusuario like '' AND idflujo='FLUJONORMAL'ya consultòpasos:0<br />
+<b>Warning</b>:  Illegal string offset 'paso' in <b>/home/encargado1/public_html/bots/flujomensajes.php</b> on line <b>81</b><br />
+estructura mensaje a grabarArray
+(
+    [mid] => mid.$cAAXG6pEVyf1h8VREdVbwA8AFR3am
+    [seq] => 453604
+    [text] => Buenos días
+)
+empezasdfo12345empezoviene normalinstancio DBhizo sql:select idflujo,paso FROM USUARIO_FLUJOS where idusuario like '1334062576683539' ORDER BY hora DESC LIMIT 1y si consultotoca normalitoa procesara consultar:select paso FROM USUARIO_FLUJOS WHERE idusuario like '1334062576683539' AND idflujo='FLUJONORMAL'ya consultòcargo pasosinsert into MENSAJES_USUARIOS(idusuario,idflujo,idpaso,mensaje,hora) VALUES('1334062576683539','FLUJONORMAL','bienvenida','.',now())ejecuto:insert into MENSAJES_USUARIOS(idusuario,idflujo,idpaso,mensaje,hora) VALUES('1334062576683539','FLUJONORMAL','bienvenida','.',now())a crear registroejecuto:insert into REGISTRO(idusuario,hora) VALUES('1334062576683539',now())mensaje a enviar{
+        "recipient":{
+          "id":"1334062576683539"
+          },
+        "message":{
+          "attachment":{
+            "type":"template",
+            "payload":{
+              "template_type":"button",
+              "text":"Bienvenido al sistema de alertas.  ¿Desea reportar un incidente?",
+              "buttons":[
+                {
+                  "type":"postback",
+                  "title":"Fuga de agua",
+                  "payload":"FLFUGAAGUA"
+                  },
+                  {
+                    "type":"postback",
+                    "title":"Falta de servicio",
+                    "payload":"falta_servicio"
+                    }
+                ]
+              }
+            }
+          }
+      }va a registrar pasoinstancioejecuto:insert INTO USUARIO_FLUJOS(idusuario,idflujo,paso) VALUES('1334062576683539','FLUJONORMAL','bienvenida')respuesta:{"error":{"message":"(#10) Cannot message users who are not admins, developers or testers of the app until pages_messaging permission is reviewed and the app is live.","type":"OAuthException","code":10,"error_subcode":2018028,"fbtrace_id":"CodsnJ+7J0D"}}estructura mensaje a grabarArray
+(
+    [mid] => mid.$cAAWcGTGIB25h8vcTqVbwa_ZephZq
+    [seq] => 382421
+    [text] => .
+)
